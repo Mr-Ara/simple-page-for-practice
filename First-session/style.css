@@ -1,0 +1,151 @@
+@font-face {
+  font-family: iran;
+  src: url(./assets/fonts/B\ Roya\ Bold_YasDL.com.ttf);
+}
+
+body {
+  font-size: 16px;
+  margin: 0px;
+}
+
+.card {
+  max-width: 400px;
+  text-align: center;
+  margin: 10px auto;
+  box-shadow: 0px 0px 10px 0px #333;
+  border-radius: 20px;
+  padding: 20px;
+  transition-duration: 0.5s;
+  transition-delay: 0.3s;
+}
+.card .fa {
+  display: none;
+  font-family: iran;
+  line-height: 1.6;
+}
+
+.card .en {
+  font-family: cursive;
+}
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  margin:20px 0px;
+}
+
+.card:hover {
+  transform: rotateY(180deg);
+  opacity: 50%;
+}
+
+.card:hover .fa {
+  display: block;
+  transform: rotateY(180deg);
+}
+
+.card:hover .en {
+  display: none;
+}
+
+.card img {
+  width: 350px;
+  border-radius: 70px;
+  height: 260px;
+}
+
+.card h1 {
+  font-size: 3rem;
+}
+
+.card p {
+  font-size: 1rem;
+}
+
+header nav {
+  box-shadow: 0px 0px 10px 0px #333;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+header .feature {
+  display: flex;
+/* From https://css.glass */
+background: rgba(0, 0, 0, 0.11);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(12.8px);
+-webkit-backdrop-filter: blur(12.8px);
+border: 1px solid rgba(133, 133, 133, 0.34);
+}
+header .feature img {
+  width: 500px;
+}
+header .feature p {
+  font-family: cursive;
+  color: #333;
+  font-size: 1rem;
+  padding: 15px;
+}
+main .feature {
+  display: flex;
+/* From https://css.glass */
+background: rgba(133, 133, 133, 0.11);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(12.8px);
+-webkit-backdrop-filter: blur(12.8px);
+border: 1px solid rgba(133, 133, 133, 0.34);
+}
+main .feature img {
+  width: 500px;
+  height: 360px;
+}
+main .feature p {
+  font-family: cursive;
+  color: #333;
+  font-size: 1rem;
+  padding: 15px;
+  
+}
+header nav a {
+  text-decoration: none;
+  margin: 0px 20px;
+  color: #333;
+  font-size: 1.2rem;
+  font-family: cursive;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main .shorts{
+font-family: cursive;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+}
+main .shorts .short{
+    display: flex;
+    box-shadow: 0px 0px 10px 0px #333;
+    margin:15px ;
+    border-radius: 20px;
+}
+main .shorts .short img{
+    width: 200px;
+    height: 200px;
+    border-bottom-right-radius: 150px;
+    transition-duration: 0.5s;
+}
+main .shorts .short img:hover{
+    border-bottom-right-radius: 0px;
+}
+
+footer{
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+
+}
